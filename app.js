@@ -14,8 +14,8 @@ $(function() {
 		request.execute(function(response) {
 			var results = response.result;
 			$.each(results.items, function(index, item) {
-				$.get("tpl/item.html", function(data) {
-					$("#result").append(data);
+				
+					console.log(data);
 				})
 			})
 		})
