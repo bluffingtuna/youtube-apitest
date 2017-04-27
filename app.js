@@ -14,10 +14,9 @@ $(function() {
 		request.execute(function(response) {
 			var results = response.result;
 			$.each(results.items, function(index, item) {
-				
-					console.log(data);
-				})
+				console.log(item);
 			})
+			
 		})
 	});
 });
